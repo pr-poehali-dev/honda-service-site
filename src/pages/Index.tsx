@@ -427,10 +427,10 @@ const Index = () => {
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
-                    АИ
+                    ФЗ
                   </div>
                   <div>
-                    <div className="font-bold text-gray-900">Алексей Иванов</div>
+                    <div className="font-bold text-gray-900">Фарид Зайнулин</div>
                     <div className="text-sm text-gray-500">Honda CR-V, 2020</div>
                   </div>
                 </div>
@@ -451,10 +451,10 @@ const Index = () => {
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
-                    МС
+                    ВХ
                   </div>
                   <div>
-                    <div className="font-bold text-gray-900">Мария Смирнова</div>
+                    <div className="font-bold text-gray-900">Виктория Хакимова</div>
                     <div className="text-sm text-gray-500">Honda Accord, 2019</div>
                   </div>
                 </div>
@@ -475,10 +475,10 @@ const Index = () => {
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
-                    ДП
+                    ИФ
                   </div>
                   <div>
-                    <div className="font-bold text-gray-900">Дмитрий Петров</div>
+                    <div className="font-bold text-gray-900">Ильшат Фатхетдинов</div>
                     <div className="text-sm text-gray-500">Honda Civic, 2018</div>
                   </div>
                 </div>
