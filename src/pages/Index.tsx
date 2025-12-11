@@ -496,6 +496,12 @@ const Index = () => {
                 Записаться на приём
               </h2>
               <p className="text-xl text-gray-600">Заполните форму, и мы свяжемся с вами</p>
+              <div className="mt-4 flex items-center justify-center gap-2 text-lg">
+                <Icon name="Phone" size={20} className="text-primary" />
+                <a href="tel:+78432760505" className="text-primary font-bold hover:underline">
+                  +7 (843) 276-05-05
+                </a>
+              </div>
             </div>
 
             <Card className="shadow-2xl border-2">
@@ -591,7 +597,9 @@ const Index = () => {
                   <Icon name="Phone" size={32} />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Телефон</h3>
-                <p className="text-gray-300">+7 (843) 123-45-67</p>
+                <a href="tel:+78432760505" className="text-gray-300 hover:text-white transition-colors">
+                  +7 (843) 276-05-05
+                </a>
               </div>
 
               <div className="text-center">
