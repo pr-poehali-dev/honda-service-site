@@ -7,19 +7,16 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{
-          backgroundImage: `url('https://cdn.poehali.dev/projects/66b65b68-a48e-4bdb-937d-cd8a977804a5/files/88739362-9ac2-4ddd-8113-0e0ecc866fde.jpg')`
+          backgroundImage: `url('https://cdn.poehali.dev/projects/66b65b68-a48e-4bdb-937d-cd8a977804a5/files/9107a2ef-ab37-46b7-85be-ac282b516523.jpg')`
         }}
       />
       <div className="relative z-10 text-center text-white px-4 max-w-5xl animate-fade-in">
         <div className="mb-10 flex flex-col items-center">
-          <svg 
-            viewBox="0 0 200 60" 
-            className="w-64 md:w-96 mb-6 drop-shadow-2xl"
-            fill="white"
-          >
-            <path d="M100 5 L130 30 L100 55 L70 30 Z M85 30 L100 20 L115 30 L100 40 Z" />
-            <text x="15" y="45" fontSize="28" fontWeight="bold" fontFamily="Arial">HONDA</text>
-          </svg>
+          <img 
+            src="https://cdn.poehali.dev/files/image.png" 
+            alt="Honda Logo" 
+            className="w-48 md:w-72 mb-6 drop-shadow-2xl"
+          />
           <div className="h-2 w-48 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-8"></div>
         </div>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
