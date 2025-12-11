@@ -47,15 +47,15 @@ const Index = () => {
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-10">
             <a 
-              href="tel:+79393760505"
+              href="tel:+78432760505"
               className="flex items-center gap-3 bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-xl hover:bg-gray-100 transition-all hover:scale-105 shadow-2xl"
             >
               <Icon name="Phone" size={24} className="text-primary" />
-              +7 (939) 376-05-05
+              +7 (843) 276-05-05
             </a>
             
             <a 
-              href="https://t.me/+79393760505"
+              href="https://t.me/+78432760505"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-[#0088cc] text-white px-8 py-4 rounded-full font-bold text-xl hover:bg-[#006699] transition-all hover:scale-105 shadow-2xl"
