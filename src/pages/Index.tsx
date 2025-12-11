@@ -75,6 +75,131 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+              Почему выбирают Honda-сервис
+            </h2>
+            <p className="text-xl text-gray-600">Мы лучше, чем другие автосервисы</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <Card className="hover:shadow-xl transition-all duration-300 border-2 border-primary/20 hover:border-primary">
+              <CardContent className="p-6 text-center">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Icon name="Award" size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Официальный дилер
+                </h3>
+                <p className="text-gray-600">
+                  Сертифицированный партнер Honda
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-2 border-primary/20 hover:border-primary">
+              <CardContent className="p-6 text-center">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Icon name="PackageCheck" size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Оригинальные запчасти
+                </h3>
+                <p className="text-gray-600">
+                  100% оригинал от производителя
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-2 border-primary/20 hover:border-primary">
+              <CardContent className="p-6 text-center">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Icon name="Users" size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Опытные мастера
+                </h3>
+                <p className="text-gray-600">
+                  Сертифицированные специалисты
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-2 border-primary/20 hover:border-primary">
+              <CardContent className="p-6 text-center">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Icon name="ShieldCheck" size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Гарантия качества
+                </h3>
+                <p className="text-gray-600">
+                  На все работы и запчасти
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-2 border-primary/20 hover:border-primary">
+              <CardContent className="p-6 text-center">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Icon name="Clock" size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Быстрый сервис
+                </h3>
+                <p className="text-gray-600">
+                  Работаем без задержек
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-2 border-primary/20 hover:border-primary">
+              <CardContent className="p-6 text-center">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Icon name="Laptop" size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Диагностика Honda
+                </h3>
+                <p className="text-gray-600">
+                  Профессиональное оборудование
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-2 border-primary/20 hover:border-primary">
+              <CardContent className="p-6 text-center">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Icon name="DollarSign" size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Честные цены
+                </h3>
+                <p className="text-gray-600">
+                  Без скрытых доплат
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 border-2 border-primary/20 hover:border-primary">
+              <CardContent className="p-6 text-center">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Icon name="Wrench" size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Полный спектр услуг
+                </h3>
+                <p className="text-gray-600">
+                  От диагностики до ремонта
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
