@@ -162,46 +162,116 @@ const Index = () => {
             <p className="text-xl text-gray-600">Профессиональное обслуживание вашего автомобиля</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="text-center hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
-              <CardContent className="p-8">
-                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                  <Icon name="Laptop" size={40} />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                    <Icon name="Wrench" size={28} />
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Ремонт ходовой части
+                    </h3>
+                    <p className="text-2xl font-bold text-primary">от 1 000 ₽</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                  Компьютерная диагностика
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Полная диагностика всех систем автомобиля с использованием профессионального оборудования
-                </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
-              <CardContent className="p-8">
-                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                  <Icon name="Wrench" size={40} />
+            <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                    <Icon name="Disc" size={28} />
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Ремонт тормозной системы
+                    </h3>
+                    <p className="text-2xl font-bold text-primary">от 1 000 ₽</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                  Техническое обслуживание
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Регулярное ТО согласно рекомендациям производителя для долгой службы вашего автомобиля
-                </p>
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
-              <CardContent className="p-8">
-                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                  <Icon name="Settings" size={40} />
+            <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                    <Icon name="Droplet" size={28} />
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Замена масла в ДВС
+                    </h3>
+                    <p className="text-2xl font-bold text-primary">от 800 ₽</p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">
-                  Проверка систем автомобиля
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Тщательная проверка тормозной системы, подвески, электрики и других важных узлов
-                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                    <Icon name="Settings" size={28} />
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Адаптация роботизированной КПП
+                    </h3>
+                    <p className="text-2xl font-bold text-primary">от 3 000 ₽</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                    <Icon name="Gauge" size={28} />
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Адаптация круиз-контроля
+                    </h3>
+                    <p className="text-2xl font-bold text-primary">от 7 500 ₽</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                    <Icon name="MoveHorizontal" size={28} />
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Развал-схождение
+                    </h3>
+                    <p className="text-2xl font-bold text-primary">от 1 800 ₽</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                    <Icon name="ShieldCheck" size={28} />
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Установка сигнализации
+                    </h3>
+                    <p className="text-2xl font-bold text-primary">от 10 000 ₽</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
