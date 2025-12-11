@@ -11,14 +11,19 @@ const HeroSection = () => {
         }}
       />
       <div className="relative z-10 text-center text-white px-4 max-w-5xl animate-fade-in">
-        <div className="mb-10">
-          <div className="text-8xl md:text-9xl font-black mb-6 tracking-wider" style={{ letterSpacing: '0.15em' }}>
-            HONDA
-          </div>
+        <div className="mb-10 flex flex-col items-center">
+          <svg 
+            viewBox="0 0 200 60" 
+            className="w-64 md:w-96 mb-6 drop-shadow-2xl"
+            fill="white"
+          >
+            <path d="M100 5 L130 30 L100 55 L70 30 Z M85 30 L100 20 L115 30 L100 40 Z" />
+            <text x="15" y="45" fontSize="28" fontWeight="bold" fontFamily="Arial">HONDA</text>
+          </svg>
           <div className="h-2 w-48 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-8"></div>
         </div>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          Автосервис ХОНДА
+          Автосервис Honda
         </h1>
         <p className="text-xl md:text-2xl mb-2 text-gray-200">
           Официальный дилер в Татарстане
