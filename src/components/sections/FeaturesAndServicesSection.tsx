@@ -145,10 +145,7 @@ const FeaturesAndServicesSection = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="hover:shadow-2xl transition-all duration-300 border-2 border-primary/30 hover:border-primary relative overflow-hidden group">
-              <div className="absolute top-0 right-0 bg-green-600 text-white px-4 py-2 text-sm font-bold transform rotate-12 translate-x-8 translate-y-4 group-hover:scale-110 transition-transform">
-                БЕСПЛАТНО
-              </div>
+            <Card className="hover:shadow-2xl transition-all duration-300 border-2 border-primary/30 hover:border-primary">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   Компьютерная диагностика
@@ -170,18 +167,17 @@ const FeaturesAndServicesSection = () => {
                     <Icon name="CheckCircle2" size={20} className="text-primary" />
                     <span>Работа бесплатно</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Без записи и ожидания</span>
-                  </li>
                 </ul>
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90 text-white"
+                  onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-2xl transition-all duration-300 border-2 border-primary/30 hover:border-primary relative overflow-hidden group">
-              <div className="absolute top-0 right-0 bg-primary text-white px-4 py-2 text-sm font-bold transform rotate-12 translate-x-8 translate-y-4 group-hover:scale-110 transition-transform">
-                ХИТ
-              </div>
+            <Card className="hover:shadow-2xl transition-all duration-300 border-2 border-primary/30 hover:border-primary">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   Бесплатная замена масла
