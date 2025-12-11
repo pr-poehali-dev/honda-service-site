@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 import CountdownTimer from "@/components/CountdownTimer";
 
@@ -258,128 +259,200 @@ const FeaturesAndServicesSection = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
               <CardContent className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="Wrench" size={28} />
+                <div className="flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                      <Icon name="Wrench" size={28} />
+                    </div>
+                    <div className="text-left flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        Ремонт ходовой части
+                      </h3>
+                      <p className="text-2xl font-bold text-primary">от 1 000 ₽</p>
+                    </div>
                   </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Ремонт ходовой части
-                    </h3>
-                    <p className="text-2xl font-bold text-primary">от 1 000 ₽</p>
-                  </div>
+                  <Button 
+                    variant="outline" 
+                    className="w-full mt-auto border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Узнать подробнее
+                  </Button>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
               <CardContent className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="Disc" size={28} />
+                <div className="flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                      <Icon name="Disc" size={28} />
+                    </div>
+                    <div className="text-left flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        Ремонт тормозной системы
+                      </h3>
+                      <p className="text-2xl font-bold text-primary">от 1 000 ₽</p>
+                    </div>
                   </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Ремонт тормозной системы
-                    </h3>
-                    <p className="text-2xl font-bold text-primary">от 1 000 ₽</p>
-                  </div>
+                  <Button 
+                    variant="outline" 
+                    className="w-full mt-auto border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Узнать подробнее
+                  </Button>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
               <CardContent className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="Droplet" size={28} />
+                <div className="flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                      <Icon name="Droplet" size={28} />
+                    </div>
+                    <div className="text-left flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        Замена масла в ДВС
+                      </h3>
+                      <p className="text-2xl font-bold text-primary">от 800 ₽</p>
+                    </div>
                   </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Замена масла в ДВС
-                    </h3>
-                    <p className="text-2xl font-bold text-primary">от 800 ₽</p>
-                  </div>
+                  <Button 
+                    variant="outline" 
+                    className="w-full mt-auto border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Узнать подробнее
+                  </Button>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
               <CardContent className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="Cog" size={28} />
+                <div className="flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                      <Icon name="Cog" size={28} />
+                    </div>
+                    <div className="text-left flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        Адаптация роботизированной КПП
+                      </h3>
+                      <p className="text-2xl font-bold text-primary">от 3 000 ₽</p>
+                    </div>
                   </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Адаптация роботизированной КПП
-                    </h3>
-                    <p className="text-2xl font-bold text-primary">от 3 000 ₽</p>
-                  </div>
+                  <Button 
+                    variant="outline" 
+                    className="w-full mt-auto border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Узнать подробнее
+                  </Button>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
               <CardContent className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="Gauge" size={28} />
+                <div className="flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                      <Icon name="Gauge" size={28} />
+                    </div>
+                    <div className="text-left flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        Адаптация круиз-контроля
+                      </h3>
+                      <p className="text-2xl font-bold text-primary">от 7 500 ₽</p>
+                    </div>
                   </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Адаптация круиз-контроля
-                    </h3>
-                    <p className="text-2xl font-bold text-primary">от 7 500 ₽</p>
-                  </div>
+                  <Button 
+                    variant="outline" 
+                    className="w-full mt-auto border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Узнать подробнее
+                  </Button>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
               <CardContent className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="AlignHorizontalJustifyCenter" size={28} />
+                <div className="flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                      <Icon name="AlignHorizontalJustifyCenter" size={28} />
+                    </div>
+                    <div className="text-left flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        Развал-схождение
+                      </h3>
+                      <p className="text-2xl font-bold text-primary">от 1 800 ₽</p>
+                    </div>
                   </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Развал-схождение
-                    </h3>
-                    <p className="text-2xl font-bold text-primary">от 1 800 ₽</p>
-                  </div>
+                  <Button 
+                    variant="outline" 
+                    className="w-full mt-auto border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Узнать подробнее
+                  </Button>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
               <CardContent className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="ShieldAlert" size={28} />
+                <div className="flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                      <Icon name="ShieldAlert" size={28} />
+                    </div>
+                    <div className="text-left flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        Установка сигнализации
+                      </h3>
+                      <p className="text-2xl font-bold text-primary">от 10 000 ₽</p>
+                    </div>
                   </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Установка сигнализации
-                    </h3>
-                    <p className="text-2xl font-bold text-primary">от 10 000 ₽</p>
-                  </div>
+                  <Button 
+                    variant="outline" 
+                    className="w-full mt-auto border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Узнать подробнее
+                  </Button>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
               <CardContent className="p-6">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="Radio" size={28} />
+                <div className="flex flex-col h-full">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                      <Icon name="Radio" size={28} />
+                    </div>
+                    <div className="text-left flex-1">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        Установка парктроников
+                      </h3>
+                      <p className="text-2xl font-bold text-primary">от 8 000 ₽</p>
+                    </div>
                   </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Установка парктроников
-                    </h3>
-                    <p className="text-2xl font-bold text-primary">от 8 000 ₽</p>
-                  </div>
+                  <Button 
+                    variant="outline" 
+                    className="w-full mt-auto border-primary text-primary hover:bg-primary hover:text-white"
+                    onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Узнать подробнее
+                  </Button>
                 </div>
               </CardContent>
             </Card>
