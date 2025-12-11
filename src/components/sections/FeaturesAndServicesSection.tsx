@@ -255,7 +255,7 @@ const FeaturesAndServicesSection = () => {
             <p className="text-xl text-gray-600">Профессиональное обслуживание вашего автомобиля</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4 mb-4">
@@ -308,13 +308,13 @@ const FeaturesAndServicesSection = () => {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="Settings" size={28} />
+                    <Icon name="Cog" size={28} />
                   </div>
                   <div className="text-left flex-1">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Диагностика двигателя
+                      Адаптация роботизированной КПП
                     </h3>
-                    <p className="text-2xl font-bold text-primary">от 500 ₽</p>
+                    <p className="text-2xl font-bold text-primary">от 3 000 ₽</p>
                   </div>
                 </div>
               </CardContent>
@@ -324,13 +324,13 @@ const FeaturesAndServicesSection = () => {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="Zap" size={28} />
+                    <Icon name="Gauge" size={28} />
                   </div>
                   <div className="text-left flex-1">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Ремонт электрики
+                      Адаптация круиз-контроля
                     </h3>
-                    <p className="text-2xl font-bold text-primary">от 1 500 ₽</p>
+                    <p className="text-2xl font-bold text-primary">от 7 500 ₽</p>
                   </div>
                 </div>
               </CardContent>
@@ -340,13 +340,45 @@ const FeaturesAndServicesSection = () => {
               <CardContent className="p-6">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
-                    <Icon name="Wind" size={28} />
+                    <Icon name="AlignHorizontalJustifyCenter" size={28} />
                   </div>
                   <div className="text-left flex-1">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Ремонт кондиционера
+                      Развал-схождение
                     </h3>
-                    <p className="text-2xl font-bold text-primary">от 2 000 ₽</p>
+                    <p className="text-2xl font-bold text-primary">от 1 800 ₽</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                    <Icon name="ShieldAlert" size={28} />
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Установка сигнализации
+                    </h3>
+                    <p className="text-2xl font-bold text-primary">от 10 000 ₽</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-xl w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg flex-shrink-0">
+                    <Icon name="Radio" size={28} />
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Установка парктроников
+                    </h3>
+                    <p className="text-2xl font-bold text-primary">от 8 000 ₽</p>
                   </div>
                 </div>
               </CardContent>
