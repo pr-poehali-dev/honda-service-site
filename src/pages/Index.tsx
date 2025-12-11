@@ -25,15 +25,15 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
-            backgroundImage: `url('https://cdn.poehali.dev/projects/66b65b68-a48e-4bdb-937d-cd8a977804a5/files/4a05fdf9-ab81-4091-9167-971e07b0ebde.jpg')`
+            backgroundImage: `url('https://cdn.poehali.dev/projects/66b65b68-a48e-4bdb-937d-cd8a977804a5/files/90bd7bc2-e923-4aef-9767-1d5ed0e33423.jpg')`
           }}
         />
         <div className="relative z-10 text-center text-white px-4 max-w-5xl animate-fade-in">
-          <div className="mb-8">
-            <div className="text-7xl font-bold mb-4 tracking-tight">
+          <div className="mb-10">
+            <div className="text-8xl md:text-9xl font-black mb-6 tracking-wider" style={{ letterSpacing: '0.15em' }}>
               HONDA
             </div>
-            <div className="h-1 w-32 bg-primary mx-auto mb-6"></div>
+            <div className="h-2 w-48 bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mb-8"></div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Автосервис ХОНДА
