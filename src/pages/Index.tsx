@@ -25,7 +25,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
-            backgroundImage: `url('https://cdn.poehali.dev/projects/66b65b68-a48e-4bdb-937d-cd8a977804a5/files/ea42ba5d-789c-4d25-884b-195c2b1d4bfa.jpg')`
+            backgroundImage: `url('https://cdn.poehali.dev/projects/66b65b68-a48e-4bdb-937d-cd8a977804a5/files/4a05fdf9-ab81-4091-9167-971e07b0ebde.jpg')`
           }}
         />
         <div className="relative z-10 text-center text-white px-4 max-w-5xl animate-fade-in">
@@ -38,13 +38,12 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Автосервис ХОНДА
           </h1>
-          <p className="text-xl md:text-2xl mb-4 text-gray-200">
-            Официальный дилер в Казани и по всему Татарстану
+          <p className="text-xl md:text-2xl mb-2 text-gray-200">
+            Официальный дилер в Татарстане
           </p>
-          <div className="flex items-center justify-center gap-3 text-lg md:text-xl text-gray-300">
-            <Icon name="Award" size={28} className="text-primary" />
-            <span className="font-semibold">На рынке с 2008 года</span>
-          </div>
+          <p className="text-lg md:text-xl text-gray-300">
+            На рынке с 2008 года
+          </p>
           <Button 
             size="lg" 
             className="mt-10 bg-primary hover:bg-primary/90 text-white text-lg px-10 py-6 rounded-full shadow-2xl transition-all hover:scale-105"
