@@ -144,93 +144,60 @@ const FeaturesAndServicesSection = () => {
             <CountdownTimer />
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="hover:shadow-2xl transition-all duration-300 border-2 border-primary/30 hover:border-primary relative overflow-hidden group">
+              <div className="absolute top-0 right-0 bg-green-600 text-white px-4 py-2 text-sm font-bold transform rotate-12 translate-x-8 translate-y-4 group-hover:scale-110 transition-transform">
+                БЕСПЛАТНО
+              </div>
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Компьютерная диагностика
+                </h3>
+                <ul className="space-y-3 mb-6">
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Диагностика по 10 пунктам</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Проверка всех систем</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Отчёт о состоянии авто</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Работа бесплатно</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Без записи и ожидания</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
             <Card className="hover:shadow-2xl transition-all duration-300 border-2 border-primary/30 hover:border-primary relative overflow-hidden group">
               <div className="absolute top-0 right-0 bg-primary text-white px-4 py-2 text-sm font-bold transform rotate-12 translate-x-8 translate-y-4 group-hover:scale-110 transition-transform">
                 ХИТ
               </div>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Техническое обслуживание
+                  Бесплатная замена масла
                 </h3>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-center gap-2">
                     <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Замена масла и фильтров</span>
+                    <span>При покупке масла Honda</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Диагностика 50 узлов</span>
+                    <span>100% оригинальное масло</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Проверка тормозов</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Работа бесплатно</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Гарантия качества</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-2xl transition-all duration-300 border-2 border-primary/30 hover:border-primary relative overflow-hidden group">
-              <div className="absolute top-0 right-0 bg-green-600 text-white px-4 py-2 text-sm font-bold transform rotate-12 translate-x-8 translate-y-4 group-hover:scale-110 transition-transform">
-                -20%
-              </div>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Диагностика ходовой
-                </h3>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Компьютерная диагностика</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Проверка на подъёмнике</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Отчёт о состоянии</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Работа бесплатно</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Гарантия качества</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-2xl transition-all duration-300 border-2 border-primary/30 hover:border-primary relative overflow-hidden group">
-              <div className="absolute top-0 right-0 bg-orange-600 text-white px-4 py-2 text-sm font-bold transform rotate-12 translate-x-8 translate-y-4 group-hover:scale-110 transition-transform">
-                NEW
-              </div>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Подготовка к сезону
-                </h3>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Смена резины</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Проверка антифриза</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="CheckCircle2" size={20} className="text-primary" />
-                    <span>Проверка аккумулятора</span>
+                    <span>Замена масляного фильтра</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Icon name="CheckCircle2" size={20} className="text-primary" />
