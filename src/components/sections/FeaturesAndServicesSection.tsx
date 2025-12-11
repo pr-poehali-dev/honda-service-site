@@ -204,6 +204,12 @@ const FeaturesAndServicesSection = () => {
                     <span>Гарантия качества</span>
                   </li>
                 </ul>
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90 text-white"
+                  onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
           </div>
