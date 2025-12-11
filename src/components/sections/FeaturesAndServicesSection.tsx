@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import CountdownTimer from "@/components/CountdownTimer";
 
 const FeaturesAndServicesSection = () => {
   return (
@@ -136,6 +137,10 @@ const FeaturesAndServicesSection = () => {
               Специальные предложения
             </h2>
             <p className="text-xl text-gray-600">Выгодные условия для наших клиентов</p>
+          </div>
+
+          <div className="max-w-3xl mx-auto mb-12">
+            <CountdownTimer />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
