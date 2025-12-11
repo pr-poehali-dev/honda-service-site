@@ -11,7 +11,7 @@ const StatsSection = () => {
   const finalValues = {
     clients: 5000,
     years: 15,
-    specialists: 12,
+    specialists: 18,
     warranty: 12
   };
 
