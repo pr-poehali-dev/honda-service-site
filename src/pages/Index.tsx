@@ -61,13 +61,19 @@ const Index = () => {
               Специальные акции
             </h2>
             <p className="text-xl text-gray-600">Выгодные предложения для наших клиентов</p>
+            <div className="inline-block mt-4 px-6 py-2 bg-primary text-white rounded-full font-semibold text-lg">
+              До конца декабря
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary overflow-hidden">
               <CardContent className="p-8">
-                <div className="bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Icon name="Laptop" size={36} />
+                <div className="flex items-start justify-between mb-6">
+                  <div className="bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Icon name="Laptop" size={36} />
+                  </div>
+                  <span className="text-2xl font-bold text-primary bg-primary/10 px-4 py-2 rounded-full">Акция!</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">
                   Компьютерная диагностика
@@ -75,9 +81,6 @@ const Index = () => {
                 <p className="text-gray-600 mb-4 text-lg leading-relaxed">
                   Комплексная проверка всех систем автомобиля по 10 основным параметрам
                 </p>
-                <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-primary">Акция!</span>
-                </div>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center gap-2">
                     <Icon name="CheckCircle2" size={20} className="text-primary" />
@@ -97,8 +100,11 @@ const Index = () => {
 
             <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary overflow-hidden">
               <CardContent className="p-8">
-                <div className="bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <Icon name="Droplet" size={36} />
+                <div className="flex items-start justify-between mb-6">
+                  <div className="bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Icon name="Droplet" size={36} />
+                  </div>
+                  <span className="text-2xl font-bold text-primary bg-primary/10 px-4 py-2 rounded-full">Акция!</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">
                   Бесплатная замена масла
@@ -106,9 +112,6 @@ const Index = () => {
                 <p className="text-gray-600 mb-4 text-lg leading-relaxed">
                   При покупке оригинального масла Honda — замена в подарок!
                 </p>
-                <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-4xl font-bold text-primary">Акция!</span>
-                </div>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center gap-2">
                     <Icon name="CheckCircle2" size={20} className="text-primary" />
