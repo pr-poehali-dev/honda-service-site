@@ -1,12 +1,315 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
 const Index = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    message: ""
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    alert("Спасибо! Мы свяжемся с вами в ближайшее время.");
+    setFormData({ name: "", phone: "", message: "" });
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen">
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{
+            backgroundImage: `url('https://cdn.poehali.dev/projects/66b65b68-a48e-4bdb-937d-cd8a977804a5/files/ea42ba5d-789c-4d25-884b-195c2b1d4bfa.jpg')`
+          }}
+        />
+        <div className="relative z-10 text-center text-white px-4 max-w-5xl animate-fade-in">
+          <div className="mb-8">
+            <div className="text-7xl font-bold mb-4 tracking-tight">
+              HONDA
+            </div>
+            <div className="h-1 w-32 bg-primary mx-auto mb-6"></div>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Автосервис ХОНДА
+          </h1>
+          <p className="text-xl md:text-2xl mb-4 text-gray-200">
+            Официальный дилер в Казани и по всему Татарстану
+          </p>
+          <div className="flex items-center justify-center gap-3 text-lg md:text-xl text-gray-300">
+            <Icon name="Award" size={28} className="text-primary" />
+            <span className="font-semibold">На рынке с 2008 года</span>
+          </div>
+          <Button 
+            size="lg" 
+            className="mt-10 bg-primary hover:bg-primary/90 text-white text-lg px-10 py-6 rounded-full shadow-2xl transition-all hover:scale-105"
+            onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            Записаться на приём
+          </Button>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+              Специальные акции
+            </h2>
+            <p className="text-xl text-gray-600">Выгодные предложения для наших клиентов</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary overflow-hidden">
+              <CardContent className="p-8">
+                <div className="bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Icon name="Laptop" size={36} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                  Компьютерная диагностика
+                </h3>
+                <p className="text-gray-600 mb-4 text-lg leading-relaxed">
+                  Комплексная проверка всех систем автомобиля по 10 основным параметрам
+                </p>
+                <div className="flex items-baseline gap-2 mb-4">
+                  <span className="text-4xl font-bold text-primary">Акция!</span>
+                </div>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Проверка двигателя</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Диагностика электроники</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Анализ систем безопасности</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary overflow-hidden">
+              <CardContent className="p-8">
+                <div className="bg-primary text-white rounded-full w-20 h-20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Icon name="Droplet" size={36} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                  Бесплатная замена масла
+                </h3>
+                <p className="text-gray-600 mb-4 text-lg leading-relaxed">
+                  При покупке оригинального масла Honda — замена в подарок!
+                </p>
+                <div className="flex items-baseline gap-2 mb-4">
+                  <span className="text-4xl font-bold text-primary">Акция!</span>
+                </div>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>100% оригинальное масло</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Работа бесплатно</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>Гарантия качества</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+              Наши услуги
+            </h2>
+            <p className="text-xl text-gray-600">Профессиональное обслуживание вашего автомобиля</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="text-center hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-8">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                  <Icon name="Laptop" size={40} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                  Компьютерная диагностика
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Полная диагностика всех систем автомобиля с использованием профессионального оборудования
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-8">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                  <Icon name="Wrench" size={40} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                  Техническое обслуживание
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Регулярное ТО согласно рекомендациям производителя для долгой службы вашего автомобиля
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary">
+              <CardContent className="p-8">
+                <div className="bg-gradient-to-br from-primary to-red-600 text-white rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                  <Icon name="Settings" size={40} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                  Проверка систем автомобиля
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Тщательная проверка тормозной системы, подвески, электрики и других важных узлов
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-12 animate-fade-in">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+                Записаться на приём
+              </h2>
+              <p className="text-xl text-gray-600">Заполните форму, и мы свяжемся с вами</p>
+            </div>
+
+            <Card className="shadow-2xl border-2">
+              <CardContent className="p-8">
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                      Ваше имя
+                    </label>
+                    <Input
+                      type="text"
+                      required
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="Иван Иванов"
+                      className="h-12 text-lg"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                      Телефон
+                    </label>
+                    <Input
+                      type="tel"
+                      required
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      placeholder="+7 (900) 123-45-67"
+                      className="h-12 text-lg"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">
+                      Сообщение
+                    </label>
+                    <Textarea
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      placeholder="Опишите проблему или выберите услугу..."
+                      className="min-h-32 text-lg"
+                    />
+                  </div>
+
+                  <Button 
+                    type="submit" 
+                    size="lg"
+                    className="w-full bg-primary hover:bg-primary/90 text-white text-lg py-6 rounded-lg shadow-lg transition-all hover:scale-105"
+                  >
+                    Отправить заявку
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Мы на карте
+            </h2>
+            <p className="text-xl text-gray-300">г. Казань, ул. Космонавтов, 73</p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=49.122414%2C55.830431&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzEyMTUzMRJO0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQotCw0YLQsNGA0YHRgtCw0L0sINCa0LDQt9Cw0L3RjCwg0YPQu9C40YbQsCDQmtC-0YHQvNC-0L3QsNCy0YLQvtCyLCA3MyIKDcWaLEIVoXdgQg%2C%2C&z=17"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mt-12">
+              <div className="text-center">
+                <div className="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Icon name="MapPin" size={32} />
+                </div>
+                <h3 className="font-bold text-lg mb-2">Адрес</h3>
+                <p className="text-gray-300">г. Казань, ул. Космонавтов, 73</p>
+              </div>
+
+              <div className="text-center">
+                <div className="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Phone" size={32} />
+                </div>
+                <h3 className="font-bold text-lg mb-2">Телефон</h3>
+                <p className="text-gray-300">+7 (843) 123-45-67</p>
+              </div>
+
+              <div className="text-center">
+                <div className="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Clock" size={32} />
+                </div>
+                <h3 className="font-bold text-lg mb-2">Режим работы</h3>
+                <p className="text-gray-300">Пн-Пт: 9:00 - 20:00<br />Сб-Вс: 10:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-black text-white py-8">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-gray-400">
+            © 2024 Автосервис ХОНДА. Официальный дилер в Казани и Татарстане
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
