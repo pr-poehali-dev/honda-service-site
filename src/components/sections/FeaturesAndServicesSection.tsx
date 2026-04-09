@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
-import CountdownTimer from "@/components/CountdownTimer";
 
 const FeaturesAndServicesSection = () => {
   return (
@@ -140,10 +139,6 @@ const FeaturesAndServicesSection = () => {
             <p className="text-xl text-gray-600">Выгодные условия для наших клиентов</p>
           </div>
 
-          <div className="max-w-3xl mx-auto mb-12">
-            <CountdownTimer />
-          </div>
-
           <div className="max-w-2xl mx-auto">
             <Card className="hover:shadow-2xl transition-all duration-300 border-2 border-primary/40 hover:border-primary overflow-hidden">
               <div className="bg-gradient-to-r from-primary to-red-600 px-8 py-5 flex items-center gap-4">
@@ -161,6 +156,17 @@ const FeaturesAndServicesSection = () => {
                 <p className="text-gray-600 text-lg mb-6">
                   При покупке моторного масла у нас — замена масла <span className="font-bold text-gray-900">и масляного фильтра в подарок</span>. Платите только за расходники, работа мастера за наш счёт.
                 </p>
+                <div className="grid grid-cols-2 gap-3 mb-6">
+                  <div className="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
+                    <div className="text-sm text-gray-500 mb-1">Kia / Hyundai</div>
+                    <div className="text-2xl font-bold text-primary">от 4 400 ₽</div>
+                  </div>
+                  <div className="bg-gray-50 rounded-xl p-4 text-center border border-gray-100">
+                    <div className="text-sm text-gray-500 mb-1">Honda</div>
+                    <div className="text-2xl font-bold text-primary">от 4 800 ₽</div>
+                  </div>
+                </div>
+
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start gap-3">
                     <Icon name="CheckCircle2" size={22} className="text-primary mt-0.5 flex-shrink-0" />
