@@ -10,7 +10,7 @@ const FeaturesAndServicesSection = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Почему выбирают Honda-сервис
+              Почему выбирают Автосервис на Космонавтов
             </h2>
             <p className="text-xl text-gray-600">Мы лучше, чем другие автосервисы</p>
           </div>
@@ -22,10 +22,10 @@ const FeaturesAndServicesSection = () => {
                   <Icon name="Award" size={32} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Официальный дилер
+                  Опыт с 2008 года
                 </h3>
                 <p className="text-gray-600">
-                  Сертифицированный партнер Honda
+                  Работаем на рынке с 2008 года
                 </p>
               </CardContent>
             </Card>
@@ -92,7 +92,7 @@ const FeaturesAndServicesSection = () => {
                   <Icon name="Laptop" size={32} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Диагностика Honda
+                  Компьютерная диагностика
                 </h3>
                 <p className="text-gray-600">
                   Профессиональное оборудование

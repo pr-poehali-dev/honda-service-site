@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
                 <Icon name="Star" size={20} className="text-yellow-500 fill-yellow-500" />
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                "Отличный сервис! Делали диагностику Honda CR-V. Всё быстро, качественно, по адекватной цене. Мастера профессионалы своего дела. Обязательно вернусь сюда снова."
+                "Отличный сервис! Делали диагностику автомобиля. Всё быстро, качественно, по адекватной цене. Мастера профессионалы своего дела. Обязательно вернусь сюда снова."
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <div className="font-bold text-gray-900">Фарид Зайнулин</div>
-                  <div className="text-sm text-gray-500">Honda CR-V, 2020</div>
+                  <div className="text-sm text-gray-500">Kia Sportage, 2020</div>
                 </div>
               </div>
             </CardContent>
@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <div className="font-bold text-gray-900">Виктория Хакимова</div>
-                  <div className="text-sm text-gray-500">Honda Accord, 2019</div>
+                  <div className="text-sm text-gray-500">Toyota Camry, 2019</div>
                 </div>
               </div>
             </CardContent>
@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
                 <Icon name="Star" size={20} className="text-yellow-500 fill-yellow-500" />
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                "Обслуживаю здесь свою Хонду уже 3 года. Надёжный сервис с опытными мастерами. Используют оригинальные запчасти, дают гарантию. Рекомендую всем!"
+                "Обслуживаю здесь свой автомобиль уже 3 года. Надёжный сервис с опытными мастерами. Используют оригинальные запчасти, дают гарантию. Рекомендую всем!"
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
@@ -79,7 +79,7 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <div className="font-bold text-gray-900">Ильшат Фатхетдинов</div>
-                  <div className="text-sm text-gray-500">Honda Civic, 2018</div>
+                  <div className="text-sm text-gray-500">Lada Vesta, 2018</div>
                 </div>
               </div>
             </CardContent>
